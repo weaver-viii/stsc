@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>stsc</groupId>
-	<artifactId>stsc.signals</artifactId>
+	<artifactId>stsc.common</artifactId>
 	<version>0.0.17-PROSEP</version>
 	<packaging>jar</packaging>
 
-	<name>stsc.signals</name>
+	<name>stsc.common</name>
 	<url>https://github.com/sidorovis/stsc</url>
 
 	<properties>
@@ -22,17 +22,6 @@
 	        <url>file://${project.build.directory}/mvn-repo</url>
     	</repository>
 	</distributionManagement>
-
-	<repositories>
-	    <repository>
-    	  	<id>stsc-common-mvn-repo</id>
-     		<url>https://raw.github.com/sidorovis/stsc/stsc.common/</url>
-        	<snapshots>
-	            <enabled>true</enabled>
-    	        <updatePolicy>always</updatePolicy>
-        	</snapshots>
-   		</repository>
-	</repositories>
 
 	<build>
 		<defaultGoal>compile</defaultGoal>
@@ -85,11 +74,6 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>stsc</groupId>
-			<artifactId>stsc.common</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
@@ -100,6 +84,21 @@
 			<artifactId>joda-time</artifactId>
 			<version>2.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.0-beta9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.efficient-java-matrix-library</groupId>
+			<artifactId>ejml</artifactId>
+			<version>0.25</version>
+		</dependency>
 	</dependencies>
-	<description>Stsc signals project contain all possible signals.</description>
+	<description>Stsc common is a common classes for stsc project.</description>
 </project>
