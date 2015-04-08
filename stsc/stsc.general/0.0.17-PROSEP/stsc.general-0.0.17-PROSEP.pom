@@ -116,21 +116,7 @@
   </build>
 
   <dependencies>
-<!--    <dependency>
-      <groupId>stsc</groupId>
-      <artifactId>stsc.common</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>stsc</groupId>
-      <artifactId>stsc.signals</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>stsc</groupId>
-      <artifactId>stsc.algorithms.common</artifactId>
-      <version>${project.version}</version>
-    </dependency> -->
+
     <dependency>
       <groupId>stsc</groupId>
       <artifactId>stsc.storage</artifactId>
