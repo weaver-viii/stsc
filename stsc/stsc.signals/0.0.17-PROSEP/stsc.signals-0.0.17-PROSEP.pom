@@ -27,10 +27,6 @@
 	    <repository>
     	  	<id>stsc-common-mvn-repo</id>
      		<url>https://raw.github.com/sidorovis/stsc/stsc.common/</url>
-        	<snapshots>
-	            <enabled>true</enabled>
-    	        <updatePolicy>always</updatePolicy>
-        	</snapshots>
    		</repository>
 	</repositories>
 
@@ -63,7 +59,7 @@
             <artifactId>site-maven-plugin</artifactId>
             <version>0.11</version>
             <configuration>
-                <message>#2 Maven artifacts for ${project.version}</message>
+                <message>Maven artifacts for ${project.version}</message>
                 <noJekyll>true</noJekyll>
                 <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                 <branch>refs/heads/stsc.signals</branch>
